@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/e8fc7339cf.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>My site</title>
+</head> 
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="imgs/ibami_logo.png"/>
+            <ul class="nav_links">             
+                <li><a href="#">Missão</a></li>
+                <li><a href="#">Valores</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Fale Conosco</a></li>
+            </ul>
+            <a onclick="openNav()" class="ctaMenu" href="#"><img class="menu" src="imgs/menu.png"/></a>
+        </nav>
+    </header>
+    <div id="mobile" class="overlay">
+        <a onclick="closeNav()" class="close" href="#">&times;</a>
+        <div class="overlayContent">
+            <a href="#">Missão</a>
+            <a href="#">Valores</a>
+            <a href="#">Projetos</a>
+            <a href="#">Fale Conosco</a>
+        </div>
+    </div>
+    <section class="home">
+        <h1>Jesus REI dos reis</h1>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
