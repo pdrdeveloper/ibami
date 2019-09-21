@@ -123,6 +123,10 @@ nav {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), rgb(255, 255, 255));
 }
 
+.textBox {
+    text-align: center;
+}
+
 .home h1 {
     font-size: 60px;
     color: #000000;
@@ -142,19 +146,47 @@ nav {
     }
   }
 
+  .home h2 {
+    font-size: 30px;
+    color: #000000;
+    font-weight: 700;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+ @keyframes text-focus-in {
+    0% {
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+
   @media screen and (max-width: 600px) {
       .home h1 {
           font-size: 48px;
+      }
+      .home h2 {
+        font-size: 24px;
       }
   }
   @media screen and (max-width: 460px) {
     .home h1 {
         font-size: 36px;
     }
+    .home h2 {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 330px) {
     .home h1 {
         font-size: 30px;
+    }
+    .home h2 {
+        font-size: 15px;
     }
 }

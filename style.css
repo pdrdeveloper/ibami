@@ -146,6 +146,10 @@ nav {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), white);
 }
 
+.textBox {
+  text-align: center;
+}
+
 .home h1 {
   font-size: 60px;
   color: #000000;
@@ -182,9 +186,46 @@ nav {
   }
 }
 
+.home h2 {
+  font-size: 30px;
+  color: #000000;
+  font-weight: 700;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+          animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .home h1 {
     font-size: 48px;
+  }
+  .home h2 {
+    font-size: 24px;
   }
 }
 
@@ -192,11 +233,17 @@ nav {
   .home h1 {
     font-size: 36px;
   }
+  .home h2 {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 330px) {
   .home h1 {
     font-size: 30px;
+  }
+  .home h2 {
+    font-size: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
