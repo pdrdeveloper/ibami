@@ -7,6 +7,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header li, a {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
@@ -189,4 +193,47 @@ nav {
     .home h2 {
         font-size: 15px;
     }
+}
+
+.missao {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+}
+
+.missaoBox {
+    text-align: center;
+}
+
+.titleMissao {
+    padding: 2% 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 48px;
+    color: #000;
+}
+
+.missaoText {
+    padding: 0 5% 2% 5%;
+    font-weight: 500;
+    font-size: 30px;
+    color: #000; 
+}
+
+@media screen and (max-width: 600px) {
+    .titleMissao {
+        font-size: 36px;
+    }
+    .missaoText {
+      font-size: 26px;
+    }
+}
+@media screen and (max-width: 330px) {
+  .titleMissao {
+      font-size: 30px;
+  }
+  .missaoText {
+      font-size: 24px;
+  }
 }

@@ -14,7 +14,7 @@
         <nav>
             <img class="logo" src="imgs/ibami_logo.png"/>
             <ul class="nav_links">             
-                <li><a href="#">Missão</a></li>
+                <li><a href="#missao">Missão</a></li>
                 <li><a href="#">Valores</a></li>
                 <li><a href="#">Projetos</a></li>
                 <li><a href="#">Fale Conosco</a></li>
@@ -23,18 +23,26 @@
         </nav>
     </header>
     <div id="mobile" class="overlay">
-        <a onclick="closeNav()" class="close" href="#">&times;</a>
+        <button onclick="closeNav()" class="close" href="#">&times;</button>
         <div class="overlayContent">
-            <a href="#">Missão</a>
-            <a href="#">Valores</a>
-            <a href="#">Projetos</a>
-            <a href="#">Fale Conosco</a>
+            <a href="#missao" onclick="closeNav()">Missão</a>
+            <a href="#" onclick="closeNav()">Valores</a>
+            <a href="#" onclick="closeNav()">Projetos</a>
+            <a href="#" onclick="closeNav()">Fale Conosco</a>
         </div>
     </div>
     <section class="home">
         <div class="textBox">
             <h1>Jesus REI dos reis</h1>
             <h2>Ap 19:16</h2>
+        </div>
+    </section>
+    <section class="missao" id="missao">
+        <div class="missaoBox">
+            <p class="titleMissao">Nossa missão</p>
+            <p class="missaoText">Espalhar o amor de Jesus através de sua divina palavra e ganhar almas pelo seu poder imensurável.<br> 
+                Porque dele e por ele, e para ele, são todas as coisas; glória, pois, a ele eternamente. Amém.<br>
+                Romanos 11:36</p>
         </div>
     </section>
     <script src="script.js"></script>
